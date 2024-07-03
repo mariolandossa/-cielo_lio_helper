@@ -1,5 +1,5 @@
 class CheckoutRequest {
-  String? clientID;
+  String? clientId;
   String? accessToken;
   int? value;
   String? paymentCode;
@@ -10,7 +10,7 @@ class CheckoutRequest {
   List<Item>? items;
 
   CheckoutRequest({
-    this.clientID,
+    this.clientId,
     this.accessToken,
     this.value,
     this.paymentCode,
@@ -22,7 +22,7 @@ class CheckoutRequest {
   });
 
   CheckoutRequest.fromJson(Map<String?, dynamic> json) {
-    clientID = json['clientID'];
+    clientId = json['clientId'];
     accessToken = json['accessToken'];
     value = json['value'];
     paymentCode = json['paymentCode'];
@@ -40,7 +40,7 @@ class CheckoutRequest {
 
   Map<String?, dynamic> toJson() {
     final Map<String?, dynamic> data = new Map<String?, dynamic>();
-    data['clientID'] = this.clientID;
+    data['clientId'] = this.clientId;
     data['accessToken'] = this.accessToken;
     data['value'] = this.value;
     data['paymentCode'] = this.paymentCode;
